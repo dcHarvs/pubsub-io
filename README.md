@@ -1,18 +1,11 @@
-# PubsubIo
+# PubSubIO
 
-To start your Phoenix server:
+PubSubIO is an open-source cloud service designed to streamline WebSocket integration for web and mobile applications. This project uses the Phoenix framework to provide a fast, reliable, and scalable solution for real-time communication.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+### Contributing
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+We welcome contributions! Please fork the repository and submit pull requests.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+### License
 
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+PubSubIO is open-source software licensed under the MIT license.
