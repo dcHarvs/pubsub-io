@@ -1,32 +1,46 @@
-<header class="px-4 sm:px-6 lg:px-8">
-  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
-    <div class="flex items-center gap-4">
-      <a href="/">
-        <img src={~p"/images/logo.svg"} width="36" />
+<main class="flex w-full h-full text-zinc-900">
+  <aside
+    class="flex-1 max-w-xs border-r border-zinc-200 flex flex-col justify-between bg-zinc-50"
+  >
+    <!-- Sidebar -->
+    <nav class="flex flex-col">
+      <a href="/" class="text-xl font-semibold border-b border-zinc-200 p-4">
+        PubSubIO
       </a>
-      <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
-        v<%= Application.spec(:phoenix, :vsn) %>
-      </p>
-    </div>
-    <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
-      <a href="https://twitter.com/elixirphoenix" class="hover:text-zinc-700">
-        @elixirphoenix
-      </a>
-      <a href="https://github.com/phoenixframework/phoenix" class="hover:text-zinc-700">
-        GitHub
-      </a>
-      <a
-        href="https://hexdocs.pm/phoenix/overview.html"
-        class="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200/80"
+      <ul>
+        <li class="hover:bg-zinc-200 transition-colors">
+          <a class="block py-2 px-4 text-base cursor-pointer" href="/">
+            Dashboard
+          </a>
+        </li>
+        <li class="hover:bg-zinc-200 transition-colors">
+          <a class="block py-2 px-4 text-base cursor-pointer" href="/channels">
+            Channels
+          </a>
+        </li>
+        <li class="hover:bg-zinc-200 transition-colors">
+          <a
+            class="block py-2 px-4 text-base cursor-pointer"
+            href="/preferences"
+          >
+            Preference
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a
+      href="/"
+      class="text-lg p-4 border-t border-zinc-200 flex gap-2 hover:bg-zinc-200 items-center transition-colors"
+    >
+      <div
+        class="rounded-full size-8 bg-slate-600 text-white leading-[32px] text-center"
       >
-        Get Started <span aria-hidden="true">&rarr;</span>
-      </a>
-    </div>
-  </div>
-</header>
-<main class="px-4 py-20 sm:px-6 lg:px-8">
-  <div class="mx-auto max-w-2xl">
-    <.flash_group flash={@flash} />
-    <%= @inner_content %>
-  </div>
+        LI
+      </div>
+      <p class="font-semibold">Lorem Ipsum</p>
+    </a>
+  </aside>
+
+  <section class="flex-1 p-4"><%= @inner_content %></section>
 </main>

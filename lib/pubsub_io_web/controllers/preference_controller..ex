@@ -1,4 +1,4 @@
-defmodule PubsubIoWeb.PageController do
+defmodule PubsubIoWeb.PreferenceController do
   use PubsubIoWeb, :controller
 
   def home(conn, _params) do

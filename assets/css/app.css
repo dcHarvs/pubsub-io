@@ -3,3 +3,7 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+html,
+body {
+  @apply h-screen w-screen !p-0 !m-0 overflow-hidden;
+}
